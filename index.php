@@ -14,6 +14,6 @@ $text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ex
     <title>Document</title>
 </head>
 <body>
-    <p><?php echo $text ?> </p>
+    <p> benvenuto<?php echo $text ?> </p>
 </body>
 </html>
