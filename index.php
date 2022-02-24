@@ -1,5 +1,4 @@
 <?php 
-
 $text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ex vero quibusdam maiores natus';
 
 ?>
@@ -14,6 +13,6 @@ $text = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ex
     <title>Document</title>
 </head>
 <body>
-    <p> benvenuto<?php echo $text ?> </p>
+    <p><?php echo var_dump($text) ?> </p>
 </body>
 </html>
