@@ -17,11 +17,21 @@ $text_censured = str_replace( $word, '***', $text);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        span{
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <p><?php echo $text ?></p>
+    <h1>Censura parole: nel campo input sottostante intromettere le parole da censurare</h1>
+    <p><span>Frase: </span> <?php echo $text ?></p>
     <p> il testo è grande <?php echo strlen($text) ?> caratteri </p>
     <hr>
-    <p><?php echo $text_censured ?></p>
+    <form action="" method="GET">
+        <input type="text" name="parola" placeholder="scrivi parole da censurare">
+        <button>Censura</button>
+    </form>
+    <p><span>Frase censurata: </span> <?php echo $text_censured ?></p>
 </body>
 </html>
